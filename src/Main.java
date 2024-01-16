@@ -8,29 +8,29 @@ public class Main {
         PaintColor paintColor = PaintColor.WHITE;
 
         Lamp lamp = new Lamp(lampType, true, 5);
-        System.out.println("Lamp= " + lamp.toString());
+        System.out.println(lamp.toString());
 
         Bed bed = new Bed("Classic", 2, 40, 1,1);
-        System.out.println("Bed= " + bed.toString());
+        System.out.println(bed.toString());
 
         Wardrobe wardrobe = new Wardrobe(100,200,50);
-        System.out.println("Wardrobe= " + wardrobe.toString());
+        System.out.println(wardrobe.toString());
 
         Carpet carpet = new Carpet(50,100, paintColor);
-        System.out.println("Carpet= " + carpet.toString());
+        System.out.println(carpet.toString());
 
         Ceiling ceiling = new Ceiling(100, paintColor);
-        System.out.println("Ceiling= " + ceiling.toString());
+        System.out.println(ceiling.toString());
 
 
         Wall wall1 = new Wall("North");
         Wall wall2 = new Wall("South");
         Wall wall3 = new Wall("East");
         Wall wall4 = new Wall("West");
-        System.out.println("Wall= " + wall1.toString() + wall2.toString() + wall3.toString() + wall4.toString());
+        System.out.println(wall1.toString() + wall2.toString() + wall3.toString() + wall4.toString());
 
         Bedroom bedroom = new Bedroom("Best bedroom", wall1, wall2, wall3, wall4, ceiling, bed, lamp, wardrobe, carpet);
-        System.out.println("Bedroom name : " + bedroom.toString());
+        System.out.println(bedroom.toString());
 
     }
 }
